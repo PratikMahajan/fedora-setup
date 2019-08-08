@@ -8,9 +8,7 @@ eval "$(ssh-agent -s)"
 
 ssh-add ~/.ssh/id_rsa
 
-sudo yum install xclip -y
-
-xclip -sel clip < ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub > sshkey
 
 
-echo "SSH KEYS COPIED TO YOUR CLIPBOARD. ADD TO YOUR GITHUB ACCOUNT"
+echo "SSH KEYS STORED IN sshkey FILE. ADD TO YOUR GITHUB ACCOUNT"
