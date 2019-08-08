@@ -26,7 +26,7 @@ sudo mv /tmp/{kubectl,oc} /usr/local/bin
 rm /tmp/openshift-client-linux.tar.gz
 
 # use docker without sudo 
-sudo groupadd docker
-sudo usermod -aG docker $USER
+groupadd docker
+usermod -aG docker $USER
 
-
+yum install -y podman
