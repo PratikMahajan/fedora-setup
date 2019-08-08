@@ -20,7 +20,7 @@ function header_text {
 
 header_text "Installing Openshift and Kubernetes Commandline Tools"
 cd /tmp
-curl -l https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux-4.1.4.tar.gz > /tmp/openshift-client-linux.tar.gz
+curl -l https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.1.9/openshift-client-linux-4.1.9.tar.gz > /tmp/openshift-client-linux.tar.gz
 tar -xzf /tmp/openshift-client-linux.tar.gz
 sudo mv /tmp/{kubectl,oc} /usr/local/bin
 rm /tmp/openshift-client-linux.tar.gz
